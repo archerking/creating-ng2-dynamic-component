@@ -1,0 +1,8 @@
+<form>
+    <!-- Emitting event on click -->
+  <ul class="list-unstyled">
+    <li *ngFor="let comp of compList">
+    <label><button class="btn btn-primary" type="button" (click)="addComp.emit(comp)">{{comp.name}}</button></label>
+    </li>
+  </ul>
+</form>

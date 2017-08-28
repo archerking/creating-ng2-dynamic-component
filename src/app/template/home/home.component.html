@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12"><h1>Adding and Removing Dynamic Components in Angular</h1></div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-md-4">
+      <!-- Add component event emitter binding to parent method -->
+      <app-component-list (addComp)="addComponent($event)"></app-component-list>
+    </div>
+    <div class="col-md-8">
+      <!-- Placeholder for components where it will be rendered. Where we are passing a reference variable name starting with (#) -->
+      <template #CompPlaceHolder></template>
+      <ng-content></ng-content>
+    </div>
+  </div>
+<div>
